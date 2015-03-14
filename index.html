@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Modal</title>
+	<link rel="stylesheet" type="text/css" href="modal.css">
+	<script src="modal.js"></script>
+</head>
+
+<body>
+	
+	<div class="page-wrapper">
+		<input class="modal-open" type="button" value="Open Modal">
+	</div>
+	
+	<div class="modal-backdrop"></div>
+	
+	<div class="modal">
+		<span class="modal-close">&times;</span>
+	</div>
+	
+	<script>
+	//IIFE executes on document load
+	(function () {
+		var modalOpen = document.getElementsByClassName("modal-open")[0];
+		var carousel = new Carousel.Widget(modalOpen);
+	})();
+	</script>
+	
+</body>
+
+</html>
