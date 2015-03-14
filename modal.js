@@ -1,14 +1,14 @@
 (function (rootObj) {
 	
-	var Carousel = rootObj.Carousel = rootObj.Carousel || {};
+	var Modal = rootObj.Modal = rootObj.Modal || {};
 	
-	var Widget = Carousel.Widget = function (openEl) {
+	var Widget = Modal.Widget = function (openEl) {
 	this.doc = rootObj.document;
   this.openEl = openEl;
-  this.setupCarousel();	
+  this.setupModal();	
 }
 
-Widget.prototype.setupCarousel = function() {
+Widget.prototype.setupModal = function() {
 	this.body = this.doc.getElementsByTagName("body")[0];
 	var modalClose = this.doc.getElementsByClassName("modal-close")[0];
   var modalBackdrop = this.doc.getElementsByClassName("modal-backdrop")[0];
